@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeastMode Fitness</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - BeastMode Fitness</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to BeastMode Fitness</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Edited by Suyog  for contact section -->
+
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you! Drop us a message.</p>
+    <form id="contactForm">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" placeholder="Your Full Name" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-calendar-alt"></i>
+        <input type="date" id="date" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-clock"></i>
+        <input type="time" id="time" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-comment-dots"></i>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <p>Thank you for contacting BeastMode-Fitness! We'll get back to you shortly.</p>
+    </div>
+  </div>
+
 </body>
 </html>
