@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" 
+       
   <title>BeastMode Fitness</title>
   <link rel="stylesheet" href="css/style.css" />
+
+  <title>Contact - BeastMode Fitness</title>
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+
+
+<!-- Edited by Suyog  for contact section -->
+
+  <!-- Header -->
+
   <header>
     <div class="container header-container">
       <div class="logo-title">
@@ -25,6 +36,7 @@
       </nav>
     </div>
   </header>
+
   
 
   <section class="hero" id="hero">
@@ -139,13 +151,20 @@
     </div>
   </section>
 
+ 868087f (Added contact section with form, modal, and contact logic)
+
+
   <section class="contact" id="contact">
     <h2>Get in Touch</h2>
     <p>We’d love to hear from you! Drop us a message.</p>
     <form id="contactForm">
       <div class="input-group">
         <i class="fas fa-user"></i>
+service-section
         <input type="text" id="name" placeholder="Your Name" required />
+
+        <input type="text" id="name" placeholder="Your Full Name" required />
+
       </div>
       <div class="input-group">
         <i class="fas fa-envelope"></i>
@@ -166,6 +185,7 @@
       <button type="submit" class="btn">Send Message</button>
       <p id="formMsg"></p>
     </form>
+ service-section
     <div class="social-contact">
       <a href="https://www.facebook.com" target="_blank">
         <i class="fab fa-facebook-f"></i> Facebook
@@ -192,5 +212,69 @@
   </footer>
 
   <script src="js/script.js"></script>
+
+  </section>
+
+
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <p>Thank you for contacting BeastMode-Fitness! We'll get back to you shortly.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Get in Touch</h2>
+  <p>We’d love to hear from you! Drop us a message.</p>
+  <form id="contactForm">
+    <div class="input-group">
+      <i class="fas fa-user"></i>
+      <input type="text" id="name" placeholder="Your Name" required />
+    </div>
+    <div class="input-group">
+      <i class="fas fa-envelope"></i>
+      <input type="email" id="email" placeholder="Your Email" required />
+    </div>
+    <div class="input-group">
+      <i class="fas fa-calendar-alt"></i>
+      <input type="date" id="date" required />
+    </div>
+    <div class="input-group">
+      <i class="fas fa-clock"></i>
+      <input type="time" id="time" required />
+    </div>
+    <div class="input-group">
+      <i class="fas fa-comment-dots"></i>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+    <p id="formMsg"></p>
+  </form>
+
+  <div class="social-contact">
+    <a href="https://www.facebook.com" target="_blank">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="tel:+1234567890">
+      <i class="fas fa-phone-alt"></i> +1 (234) 567-890
+    </a>
+  </div>
+</section>
+
+<!-- Modal Popup -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="closeBtn">&times;</span>
+    <p>Thank you for contacting BeastMode Fitness! We'll get back to you shortly.</p>
+  </div>
+</div>
+ 868087f (Added contact section with form, modal, and contact logic)
+
+
 </body>
 </html>

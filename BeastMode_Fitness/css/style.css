@@ -1,3 +1,4 @@
+
 /* === Reset === */
 * {
   margin: 0;
@@ -264,6 +265,8 @@ footer {
 }
 
 /* === Contact Section === */
+=======
+/* === Contact Section === */
 .contact {
   padding: 60px 20px;
   background-color: #f8f9fa;
@@ -284,32 +287,6 @@ footer {
 form {
   max-width: 700px;
   margin: 0 auto;
-}
-.social-contact {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.social-contact a {
-  color: #111;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.3s ease;
-}
-
-.social-contact a:hover {
-  color: #ff5722;
-}
-
-.social-contact i {
-  font-size: 1.2rem;
 }
 
 .input-group {
@@ -347,7 +324,7 @@ textarea {
   font-weight: bold;
 }
 
-/* Modal Styles */
+/* === Modal Styles === */
 .modal {
   display: none;
   position: fixed;
@@ -377,6 +354,154 @@ textarea {
   font-size: 24px;
   cursor: pointer;
 }
+form button.btn {
+  margin-top: 10px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button.btn:hover {
+  background-color: #e64a19;
+}
+
+.input-group input,
+.input-group textarea {
+  font-size: 1rem;
+  padding: 10px 12px;
+}
+
+form .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.social-contact {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-contact a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-contact a:hover {
+  color: #ff5722;
+}
+
+.social-contact i {
+  font-size: 1.2rem;
+}
+
+
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+  padding: 5px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+#formMsg {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+
+/* Modal Styles */
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 
 /* === Responsive === */
 @media (max-width: 768px) {
@@ -408,4 +533,32 @@ textarea {
   .service-card {
     width: 90%;
   }
+
+/* Social Icons */
+.social-contact {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-contact a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-contact a:hover {
+  color: #ff5722;
+}
+
+.social-contact i {
+  font-size: 1.2rem;
+
 }
