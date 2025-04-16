@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
+
 }
 nav ul li {
     display: inline;
@@ -121,9 +121,13 @@ nav ul li {
     font-size: 24px;
     cursor: pointer;
   }
-=======
+  
+  * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
+  
   
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -243,5 +247,5 @@ nav ul li {
     padding: 20px;
     font-size: 0.9rem;
   }
->>>>>>> main
+ 
   
