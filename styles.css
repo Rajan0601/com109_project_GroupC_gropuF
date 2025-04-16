@@ -1,0 +1,411 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* === Header / Navigation === */
+header {
+  background-color: #111;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.header-container h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff5733;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* === Hero Section === */
+.hero {
+  background: url('../images/gym-hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0400f;
+  transform: scale(1.05);
+}
+
+/* === Services Section === */
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.learn-more-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #e64a19;
+}
+
+.extra-info {
+  margin-top: 15px;
+  display: none;
+  text-align: left;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.toggle-buttons {
+  margin-top: 30px;
+}
+
+.toggle-buttons button {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-buttons button:hover {
+  background-color: #e64a19;
+}
+
+/* === Calculators === */
+.calculator-section {
+  background: #fff;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-section input,
+.calculator-section select,
+.calculator-section button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* === Features Section === */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.features h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+/* === Testimonials === */
+.testimonials {
+  background: #222;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* === Footer === */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* === Contact Section === */
+.contact {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.social-contact {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-contact a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-contact a:hover {
+  color: #ff5722;
+}
+
+.social-contact i {
+  font-size: 1.2rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+  padding: 5px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+#formMsg {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
