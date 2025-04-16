@@ -1,14 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-h1 {
-    color: #ff5733;
-}
-nav ul {
-    list-style: none;
+* {
+    margin: 0;
     padding: 0;
+<<<<<<< HEAD
 }
 nav ul li {
     display: inline;
@@ -128,4 +121,127 @@ nav ul li {
     font-size: 24px;
     cursor: pointer;
   }
+=======
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 15px 30px;
+    position: relative;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .header-container h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #ff5733;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .hero {
+    background: url('../images/gym-hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .quote {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+  }
+  
+  .btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e0400f;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+>>>>>>> main
   
