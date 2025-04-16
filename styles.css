@@ -71,7 +71,7 @@ nav a:hover {
 
 /* === Hero Section === */
 .hero {
-  background: url('../images/gym-hero.jpg') no-repeat center center/cover;
+  background: url('images/gym-hero.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
   text-align: center;
@@ -80,6 +80,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
 }
+
 
 .hero h2 {
   font-size: 3rem;
