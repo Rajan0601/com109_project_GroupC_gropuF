@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" 
+       
+  <title>BeastMode Fitness</title>
+  <link rel="stylesheet" href="css/style.css" />
+
   <title>Contact - BeastMode Fitness</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<<<<<<< HEAD
+
+
+
 <!-- Edited by Suyog  for contact section -->
-=======
+
   <!-- Header -->
+
   <header>
     <div class="container header-container">
       <div class="logo-title">
@@ -29,7 +36,123 @@
       </nav>
     </div>
   </header>
->>>>>>> 868087f (Added contact section with form, modal, and contact logic)
+
+  
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h2>Unleash the Beast in You</h2>
+      <p class="quote">Push harder than yesterday if you want a different tomorrow.</p>
+      <p class="description">
+        No excuses. No limits. Just pure grind. At BeastMode Fitness, we turn sweat into strength and hustle into muscle. Whether you're just starting out or a seasoned athlete — this space is for you.
+      </p>
+      <a href="#services" class="btn">Join Now</a>
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/personal-training.jpg" alt="Personal Training" />
+        <h3>Personal Training</h3>
+        <p>1-on-1 sessions tailored to your fitness goals.</p>
+        <button class="learn-more-btn" data-target="info1">Learn More</button>
+        <div class="extra-info" id="info1">
+          <p>Our certified trainers create personalized plans to help you reach your goals faster and safer.</p>
+          <video controls width="100%">
+            <source src="videos/personal-training.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/group-classes.jpg" alt="Group Classes" />
+        <h3>Group Classes</h3>
+        <p>Fun, energetic group workouts for all levels.</p>
+        <button class="learn-more-btn" data-target="info2">Learn More</button>
+        <div class="extra-info" id="info2">
+          <p>Join Zumba, HIIT, and more led by motivating coaches to keep you pumped!</p>
+          <video controls width="100%">
+            <source src="videos/group-classes.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/nutrition-plans.jpg" alt="Nutrition Plans" />
+        <h3>Nutrition Plans</h3>
+        <p>Customized meal plans by certified coaches.</p>
+        <button class="learn-more-btn" data-target="info3">Learn More</button>
+        <div class="extra-info" id="info3">
+          <p>We craft meal plans tailored to your body, goals, and dietary preferences.</p>
+          <video controls width="100%">
+            <source src="videos/nutrition-plan.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="toggle-buttons">
+      <button id="show-bmi">Check Your BMI</button>
+      <button id="show-price">Estimate Price</button>
+    </div>
+  </section>
+
+  <section id="bmi-calculator" class="calculator-section" style="display: none;">
+    <h3>Check Your BMI</h3>
+    <form id="bmi-form">
+      <input type="number" id="weight" placeholder="Weight (kg)" required />
+      <input type="number" id="height" placeholder="Height (cm)" required />
+      <button type="submit" class="btn">Calculate BMI</button>
+    </form>
+    <p id="bmi-result"></p>
+  </section>
+
+  <section id="price-calculator" class="calculator-section" style="display: none;">
+    <h3>Estimate Your Monthly Cost</h3>
+    <label for="sessions">Sessions per week:</label>
+    <input type="number" id="sessions" min="1" max="7" value="3" />
+
+    <label for="plan">Select Plan:</label>
+    <select id="plan">
+      <option value="basic">Basic ($10/session)</option>
+      <option value="premium">Premium ($15/session)</option>
+      <option value="elite">Elite ($20/session)</option>
+    </select>
+
+    <button id="calculate-price" class="btn">Calculate</button>
+    <p id="result">Your estimated monthly cost: $0</p>
+  </section>
+
+  <section class="features">
+    <h3>State-of-the-art Equipment</h3>
+    <p>Train with top-class machines and free weights.</p>
+
+    <h3>Certified Trainers</h3>
+    <p>Get professional guidance and personalized plans.</p>
+
+    <h3>Flexible Memberships</h3>
+    <p>Choose a plan that fits your schedule and goals.</p>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Members Say</h2>
+    <div class="testimonial">
+      <p>"I've never felt more confident and strong!"</p>
+      <span>– Virat</span>
+    </div>
+    <div class="testimonial">
+      <p>"The trainers really push you to be your best!"</p>
+      <span>– Rohit</span>
+    </div>
+  </section>
+
+ 868087f (Added contact section with form, modal, and contact logic)
+
 
   <section class="contact" id="contact">
     <h2>Get in Touch</h2>
@@ -37,7 +160,11 @@
     <form id="contactForm">
       <div class="input-group">
         <i class="fas fa-user"></i>
+service-section
+        <input type="text" id="name" placeholder="Your Name" required />
+
         <input type="text" id="name" placeholder="Your Full Name" required />
+
       </div>
       <div class="input-group">
         <i class="fas fa-envelope"></i>
@@ -58,16 +185,44 @@
       <button type="submit" class="btn">Send Message</button>
       <p id="formMsg"></p>
     </form>
+ service-section
+    <div class="social-contact">
+      <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="tel:+1234567890">
+        <i class="fas fa-phone-alt"></i> +1 (234) 567-890
+      </a>
+    </div>
+    
   </section>
 
-<<<<<<< HEAD
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <p>Thank you for contacting BeastMode Fitness! We'll get back to you shortly.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 BeastMode Fitness. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  </section>
+
+
   <div id="popupModal" class="modal">
     <div class="modal-content">
       <span class="closeBtn">&times;</span>
       <p>Thank you for contacting BeastMode-Fitness! We'll get back to you shortly.</p>
     </div>
   </div>
-=======
+
   <script src="js/script.js"></script>
   <!-- Contact Section -->
 <section class="contact" id="contact">
@@ -118,7 +273,8 @@
     <p>Thank you for contacting BeastMode Fitness! We'll get back to you shortly.</p>
   </div>
 </div>
->>>>>>> 868087f (Added contact section with form, modal, and contact logic)
+ 868087f (Added contact section with form, modal, and contact logic)
+
 
 </body>
 </html>
